@@ -89,6 +89,8 @@ def main():
         col3, col4 = st.columns([3, 7])
 
         with col3:
+            print(type(podcast_info), podcast_info)
+            print(type(podcast_info['podcast_guest']), podcast_info['podcast_guest'])
             st.subheader("Podcast Guest")
             st.write(podcast_info['podcast_guest']['name'])
 
